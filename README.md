@@ -4,6 +4,14 @@ Install [Wkhtmltopdf](http://wkhtmltopdf.org/index.html) on Mac OS X.
 
 ## Usage
 
+Add the following line in your `Puppetfile`
+
+```
+github 'wkhtmltopdf', "0.1.1", :repo => 'agilecreativity/puppet-wkhtmltopdf'
+```
+
+Then include this line in your manifest
+
 ```puppet
 include wkhtmltopdf
 ```
@@ -11,6 +19,7 @@ include wkhtmltopdf
 ## Required Puppet Modules
 
 * `boxen`
+* `qt`
 
 ## Development
 
